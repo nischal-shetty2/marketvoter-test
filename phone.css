@@ -20,3 +20,9 @@
       width: 100px;
     }
   }
+@media (max-height:485px) {
+    .vote-count{
+        margin-top: 15px;
+    }
+    
+}
