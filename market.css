@@ -1,0 +1,130 @@
+/* CSS styles for the voting program */
+    
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(23, 22, 22);
+    color: #fff;
+    margin: 0;
+    padding: 10px;
+  }
+  
+  h1, h2 {
+    text-align: center;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* logo */
+  .logo {
+    max-width: 100px;
+    height: auto;
+  }
+  .logoimg {
+      filter: invert(100%);
+      width: 120%;
+      transition: transform .2s;
+      
+  }
+  .logoimg:hover {
+      transform: scale(1.1);
+      cursor: pointer;
+  }
+  
+  /* nav buttons */
+  .nav-buttons {
+    display: flex;
+    gap: 10px;
+    position:sticky;
+    top: 0;
+    background-color: rgb(23, 22, 22);
+    padding: 10px;
+    z-index: 1;
+  }
+  
+  .nav-buttons a {
+      text-decoration: none;
+      color: #fff;
+      background-color: #000;
+      border: 2px solid rgb(234, 226, 226);
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+      transition: transform .2s;
+  }
+  
+  .nav-buttons a:hover {
+    transform: scale(1.1);
+    background-color: white;
+    color: black;
+    border-color  : black;
+  }
+  
+  .vote-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+  }
+  
+  .vote-btn {
+    padding: 20px 40px;
+    border: none;
+    border-radius: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+  }
+  
+  .bullish-btn {
+    background-color: #4caf50;
+    color: #fff;
+    border: 1px solid rgb(3, 249, 3);
+    transition: transform .2s;
+  }
+  .bullish-btn:hover {
+   border: 1px solid rgb(44, 135, 44);
+   transform: scale(1.1);
+  }
+  
+  .bearish-btn {
+      background-color: #f44336;
+      color: #fff;
+      border: 1px solid rgb(252, 5, 5);
+      transition: transform .2s;
+  }
+  .bearish-btn:hover {
+   border: 1px solid rgb(181, 35, 35);
+   transform: scale(1.1);
+  }
+  
+  .vote-count {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .chart-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* CSS styles for the contact details */
+  
+  .contact-details {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  
+  .contact-details a {
+    color: #fff;
+    text-decoration: none;
+  }
