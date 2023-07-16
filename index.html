@@ -2,154 +2,15 @@
 <html>
 <head>
   <title>Bullish or Bearish Voting</title>
-  <style>
-    /* CSS styles for the voting program */
-    
-    body {
-      font-family: Arial, sans-serif;
-      background-color: rgb(23, 22, 22);
-      color: #fff;
-      margin: 0;
-      padding: 10px;
-    }
-    
-    h1, h2 {
-      text-align: center;
-    }
-    
-    .header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    
-    .logo {
-      max-width: 100px;
-      height: auto;
-    }
-    .logoimg {
-        width: 70%;
-        transition: transform .2s;
-        
-    }
-    .logoimg:hover {
-        transform: scale(1.1);
-            cursor: pointer;
-    }
-    
-    .nav-buttons {
-      display: flex;
-      gap: 10px;
-      position:sticky;
-      top: 0;
-      background-color: rgb(23, 22, 22);
-      padding: 10px;
-      z-index: 1;
-    }
-    
-    .nav-buttons a {
-        text-decoration: none;
-        color: #fff;
-        background-color: #000;
-        border: 2px solid rgb(234, 226, 226);
-        padding: 5px 10px;
-        border-radius: 5px;
-        font-weight: bold;
-        transition: background-color 0.3s ease;
-        transition: transform .2s;
-    }
-    
-    .nav-buttons a:hover {
-      transform: scale(1.1);
-      background-color: white;
-      color: black;
-    }
-    
-    .vote-container {
-      display: flex;
-      justify-content: center;
-      margin-bottom: 20px;
-    }
-    
-    .vote-btn {
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      font-size: 16px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-    
-    .bullish-btn {
-      background-color: #4caf50;
-      color: #fff;
-      margin-right: 10px;
-      transition: transform .2s;
-    }
-    .bullish-btn:hover {
-     border: 1px solid white;
-     transform: scale(1.025);
-    }
-    
-    .bearish-btn {
-        background-color: #f44336;
-        color: #fff;
-        transition: transform .2s;
-    }
-    .bearish-btn:hover {
-     border: 1px solid white;
-     transform: scale(1.025);
-    }
-    
-    .vote-count {
-      text-align: center;
-      font-size: 24px;
-      font-weight: bold;
-    }
-    
-    .chart-container {
-      margin-top: 30px;
-      display: flex;
-      justify-content: center;
-    }
-    
-    @media (max-width: 600px) {
-      body {
-        padding: 10px;
-      }
-      
-      .vote-container {
-        flex-direction: column;
-      }
-      
-      .vote-btn {
-        margin-bottom: 10px;
-      }
-      
-      .chart-container {
-        overflow-x: auto;
-      }
-    }
-    
-    /* CSS styles for the contact details */
-    
-    .contact-details {
-      text-align: center;
-      margin-top: 50px;
-      font-size: 18px;
-    }
-    
-    .contact-details a {
-      color: #fff;
-      text-decoration: none;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="market.css">
+  <link rel="stylesheet" href="phone.css">
 </head>
 <body>
   <div class="header">
     <div class="logo">
-      <img class="logoimg" src="http://pluspng.com/img-png/stock-market-png-stock-market-png-hd-2672.png" />
+      <img class="logoimg" src="mv logo.PNG" />
     </div>
     <div class="nav-buttons">
       <a href="https://in.tradingview.com/chart/?symbol=NSE%3ANIFTY" target="_blank">Chart</a>
@@ -166,14 +27,13 @@
   
   <div class="vote-count" id="voteCount">0 votes</div>
   
-  <div class="contact-details">
-    Creator: Nischal Shetty<br>
-    Instagram: <a href="https://www.instagram.com/nischal.shetty_2">nischal.shetty_2</a>
-  </div>
   <div class="chart-container">
     <canvas id="voteChart"></canvas>
   </div>
-  
+  <div class="contact-details">
+    Creator: Nischal Shetty<br>
+    <p id="insta"> Instagram: <a href="https://www.instagram.com/nischal.shetty_2">nischal.shetty_2</a></p>
+  </div>
   
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script>
