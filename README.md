@@ -1,1 +1,1 @@
-vote how you think market will perform today
+Vote how you think the Market will perform today!
